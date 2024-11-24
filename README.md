@@ -3,30 +3,41 @@ This repository contains an interactive visualization of US mass shootings data 
 
 ## Project Structure
 
-- **`Heat Map_files`**: Contains files for generating heat maps.
-- **`Statewise Line Charts`**: Python script and HTML files to visualize the number of victims injured and killed across states over the years.
-- **`assets`**: Folder for images, fonts, and other media.
-- **`css`**: Contains styling files for the visualizations.
-- **`data`**: Contains the following data files:
-  - `counties.json`: JSON file containing data about US counties.
-  - `counties_choropleth.json`: Data used for choropleth map visualizations of counties.
-  - `counties_year.json`: Data for year-wise analysis of counties.
-  - `filtered_mass_shootings.csv`: CSV file with mass shootings data (filtered).
+The project is organized into the following directories and files:
+
+### 1. **Visualization Files**
+- **`Heat Map_files/`**: Contains files for generating heat maps.
+- **`Statewise Line Charts/`**: Includes Python scripts and HTML files for visualizing the number of victims injured and killed across states over the years.
+- **`js/`**: JavaScript file for creating visualizations using D3.js.
+- **`libs/`**: Libraries like D3.js and TopoJSON for rendering interactive maps.
+- **`css/`**: Styling files used in the visualizations.
+
+### 2. **Data Files**
+- **`data/`**: Contains all data-related files:
+  - `counties.json`: Data about US counties.
+  - `counties_choropleth.json`: Data for choropleth map visualizations of counties.
+  - `counties_year.json`: Year-wise analysis data for counties.
+  - `filtered_mass_shootings.csv`: Filtered mass shootings data (CSV format).
   - `mass_shootings.json`: JSON file with mass shootings data.
-  - `mass_shootings_2014_2022.csv`: Main dataset of mass shootings in the US between 2014 and 2022.
-  - `network.json`: Data used for network visualizations.
-  - `us_counties_topo.json`: TopoJSON file for rendering US counties in interactive maps.
-- **`js`**: JavaScript file for visualizations using D3.js.
-- **`libs`**: Includes the D3.js and TopoJSON libraries for rendering interactive maps.
-- **`Consolidate_data.ipynb`**: Jupyter notebook for cleaning and processing the dataset.
-- **`Heat Map.html`**: HTML file for heat map visualization.
-- **`Statewise Line Charts.html`**: HTML file for the state-wise line chart visualizations.
-- **`__init__.py`**: Initialization file for Python-related scripts.
-- **`choropleth.html`**: HTML for choropleth map visualizations.
-- **`index.html`**: Main entry point for interactive visualizations.
+  - `mass_shootings_2014_2022.csv`: Main dataset for mass shootings in the US (2014-2022).
+  - `network.json`: Data for network visualizations.
+  - `us_counties_topo.json`: TopoJSON file for rendering US counties on maps.
+
+### 3. **HTML Files**
+- **`Heat Map.html`**: Displays heat map visualizations.
+- **`Statewise Line Charts.html`**: Displays state-wise line chart visualizations for victims injured and killed.
+- **`choropleth.html`**: Displays choropleth map visualizations.
+- **`index.html`**: Main entry point for the interactive visualizations.
 - **`index_injured_network_vis.html`**: Network visualization for injured victims.
 - **`index_killed_network_vis.html`**: Network visualization for killed victims.
-- **`network_data.gml`**: Data file for network visualization.
+
+### 4. **Python Scripts and Notebooks**
+- **`Consolidate_data.ipynb`**: Jupyter notebook used for cleaning and processing the mass shootings dataset.
+- **`__init__.py`**: Initialization file for Python-related scripts.
+
+### 5. **Miscellaneous Files**
+- **`network_data.gml`**: Data file for network visualizations.
+
 
 ## Technologies Used
 
